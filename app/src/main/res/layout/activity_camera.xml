@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Fullscreen WebView -->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/videoWebView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <!-- Touch-triggered overlay with Back button -->
+    <LinearLayout
+        android:id="@+id/overlayControls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#AA000000"
+        android:padding="16dp"
+        android:gravity="start|center_vertical"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_height="45dp"
+            android:layout_width="100dp"
+            android:text="Back"
+            android:background="@drawable/button_background"
+            android:drawableStart="@drawable/left_arrow"
+            android:drawablePadding="5dp"
+            android:textSize="18sp"
+            android:padding="8dp" />
+    </LinearLayout>
+
+</FrameLayout>

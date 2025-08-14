@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/login_screen_background"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="287dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/login_screen_logo"
+        android:translationY="-40dp" />
+
+    <LinearLayout
+        android:id="@+id/login_container"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/login_container_background">
+
+        <TextView
+            android:id="@+id/MainText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="32dp"
+            android:layout_gravity="center"
+            android:text="Login to Dexter Vision!"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/usernameInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:height="48dp"
+            android:width="450dp"
+            android:hint="User Name"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:drawableStart="@drawable/user_icon"
+            android:drawablePadding="15dp" />
+
+
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:height="48dp"
+            android:width="450dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/password_icon"
+            android:drawablePadding="15dp" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="300dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_background"
+            android:text="Login Baby!" />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="300dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/button_background"
+            android:text="Sign Up"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/messageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:textSize="24sp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+

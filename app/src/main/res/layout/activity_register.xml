@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up!"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:id="@+id/registerText"
+        />
+
+    <EditText
+        android:id="@+id/registerUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="400dp"
+        android:height="48dp"
+        android:layout_marginTop="25dp"
+        android:inputType="text"
+        android:hint="Enter User Name"
+        android:drawableStart="@drawable/user_icon"
+        android:drawablePadding="25dp"
+        />
+
+    <EditText
+        android:id="@+id/passwordEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:width="400dp"
+        android:height="48dp"
+        android:inputType="textPassword"
+        android:hint="Enter a Password"
+        android:drawableStart="@drawable/password_icon"
+        android:drawablePadding="25dp"
+        />
+
+    <EditText
+        android:id="@+id/passwordConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:width="400dp"
+        android:height="48dp"
+        android:inputType="textPassword"
+        android:hint="Confirm Password"
+        android:drawableStart="@drawable/password_icon"
+        android:drawablePadding="25dp"
+        />
+
+    <TextView
+        android:id="@+id/registerMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:layout_marginTop="25dp"
+        android:visibility="gone"
+        android:textColor="@color/Red"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/createAccountButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Create Account!"
+        android:background="@drawable/button_background"
+        android:width="300dp"
+        />
+
+    <Button
+        android:id="@+id/loginReturnButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Back To Login"
+        android:background="@drawable/button_background"
+        android:width="300dp"
+        android:visibility="gone"/>
+
+
+</LinearLayout>
