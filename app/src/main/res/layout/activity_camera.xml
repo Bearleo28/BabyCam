@@ -14,6 +14,10 @@
             android:id="@+id/videoWebView"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
+        <WebView
+            android:id="@+id/audioWebView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
     <!-- Touch-triggered overlay with Back button -->
@@ -35,6 +39,15 @@
             android:background="@drawable/button_background"
             android:drawableStart="@drawable/left_arrow"
             android:drawablePadding="5dp"
+            android:textSize="18sp"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/muteButton"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:text="Mute"
+            android:background="@drawable/button_background"
             android:textSize="18sp"
             android:padding="8dp" />
     </LinearLayout>

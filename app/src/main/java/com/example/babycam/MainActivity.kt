@@ -24,6 +24,7 @@ import android.webkit.WebViewClient
 import android.widget.PopupMenu
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Build
 
 class MainActivity : AppCompatActivity() {
 
@@ -47,9 +48,27 @@ class MainActivity : AppCompatActivity() {
                      }
                     R.id.menu_admin -> {
                         Toast.makeText(this@MainActivity, "This is a sneak preview Bruh!", Toast.LENGTH_SHORT).show()
+                        startActivity(Intent(this@MainActivity, AdminActivity::class.java))
                         true
                     }
-
+                    R.id.menu_background_notifications -> {
+                        // Toggle the service
+                        val intent = Intent(this, MonitorService::class.java)
+                        if (MonitorService.isRunning) {
+                            stopService(intent)
+                            MonitorService.isRunning = false
+                            Toast.makeText(this, "Notifications are OFF", Toast.LENGTH_SHORT).show()
+                        } else {
+                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                                startForegroundService(intent)
+                            } else {
+                                startService(intent)
+                            }
+                            MonitorService.isRunning = true
+                            Toast.makeText(this, "Notifications are ON", Toast.LENGTH_SHORT).show()
+                        }
+                        true
+                    }
                     else -> false
                 }
             }

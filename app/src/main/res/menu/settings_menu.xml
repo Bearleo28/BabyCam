@@ -6,5 +6,8 @@
     <item
         android:id="@+id/menu_admin"
         android:title="Admin" />
+    <item
+        android:id="@+id/menu_background_notifications"
+        android:title="Notifications" />
 
 </menu>
