@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/login_screen_background"
+    android:padding="32dp">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_container_background">
+
+        <TableLayout
+            android:id="@+id/userTable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <TableRow>
+                <TextView
+                    android:text="User Name"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="24dp"/>
+                <TextView
+                    android:text="Locked"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="24dp"/>
+                <TextView
+                    android:text="Failed Attempts"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="24dp"/>
+                <TextView
+                    android:text="Is Admin"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="24dp"/>
+            </TableRow>
+
+
+        </TableLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/adminBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back To Home"
+        android:gravity="center"
+        android:width="250dp"
+        android:height="65dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/button_background"/>
+
+
+
+</LinearLayout>
